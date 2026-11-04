@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, follow">
+<title>Impressum | Gewerbegrundstück Fuchshub 18</title>
+<style>
+:root{
+  /* Layout: Dossier im Stil eines Planblatts. Graphit, Planpapier, Signalorange wie die Straßenflächen im Bebauungsplan. */
+  --paper:#f4f5f3; --sheet:#ffffff; --ink:#1d2326; --muted:#5b666b; --line:#d5dad9; --accent:#d9620f; --accent-ink:#ffffff; --tint:#eef1f0;
+  --f-display:"Avenir Next Condensed","Roboto Condensed","Arial Narrow","Helvetica Neue",Arial,sans-serif;
+  --f-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#14181a;--sheet:#1c2124;--ink:#e7ebea;--muted:#9aa5a9;--line:#323a3e;--accent:#f08a3c;--accent-ink:#14181a;--tint:#232a2d;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#14181a;--sheet:#1c2124;--ink:#e7ebea;--muted:#9aa5a9;--line:#323a3e;--accent:#f08a3c;--accent-ink:#14181a;--tint:#232a2d;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font:16px/1.6 var(--f-body)}
+.wrap{max-width:1040px;margin:0 auto;padding:32px 20px 64px;display:grid;gap:28px}
+h1,h2,h3{font-family:var(--f-display);line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:clamp(2rem,5vw,3.1rem);font-weight:700}
+h2{font-size:1.6rem;font-weight:600}
+h3{font-size:1.1rem;font-weight:600}
+p{margin:0;max-width:68ch}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sheet{background:var(--sheet);border:1px solid var(--line);padding:28px;display:grid;gap:18px}
+.sec-head{display:flex;gap:14px;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:8px}
+.sec-no{font-family:var(--f-display);font-weight:700;color:var(--accent);font-size:1.1rem;font-variant-numeric:tabular-nums}
+.cover{display:grid;gap:20px}
+.cover img{width:100%;height:auto;display:block;border:1px solid var(--line)}
+.eyebrow{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-size:.9rem}
+.lead{font-size:1.15rem;color:var(--ink)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.kpi{background:var(--sheet);padding:14px 16px;display:grid;gap:2px}
+.kpi b{font-family:var(--f-display);font-size:1.6rem;font-weight:700;font-variant-numeric:tabular-nums}
+.kpi span{color:var(--muted);font-size:.88rem}
+.kpi.hl{background:var(--accent);color:var(--accent-ink)}
+.kpi.hl span{color:var(--accent-ink);opacity:.85}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+figure{margin:0;display:grid;gap:6px}
+figure img{width:100%;height:auto;display:block;border:1px solid var(--line);background:#fff}
+figcaption{font-size:.85rem;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:600;width:42%}
+.tblwrap{overflow-x:auto}
+ul{margin:0;padding-left:1.2em;display:grid;gap:6px;max-width:70ch}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{border:1px solid var(--line);border-top:4px solid var(--accent);padding:16px;display:grid;gap:8px;align-content:start;background:var(--sheet)}
+.card .tag{font-size:.8rem;font-family:var(--f-display);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.pill{display:inline-block;font-size:.78rem;padding:2px 8px;border:1px solid var(--line);background:var(--tint);border-radius:2px}
+.pill.todo{border-color:var(--accent);color:var(--accent)}
+.calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;align-items:stretch}
+.calc .box{background:var(--tint);padding:16px;display:grid;gap:4px}
+.calc .box b{font-family:var(--f-display);font-size:1.5rem;font-variant-numeric:tabular-nums}
+.eq{font-family:var(--f-display);font-size:1.2rem;border-left:4px solid var(--accent);padding:10px 14px;background:var(--tint)}
+.note{font-size:.85rem;color:var(--muted)}
+.todo-box{border:1px dashed var(--accent);padding:12px 14px;font-size:.92rem}
+footer{font-size:.85rem;color:var(--muted);display:grid;gap:4px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-family:var(--f-display);font-weight:600;padding:10px 18px;border:2px solid var(--accent)}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.contact>div{background:var(--tint);padding:14px 16px;line-height:1.7}
+@media print{body{background:#fff}.sheet{break-inside:avoid;border:none;padding:0 0 12px}.wrap{gap:18px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<section class="sheet legal">
+<p><a href="index.html">Zurück zum Grundstück</a></p>
+<h1>Impressum</h1>
+<h2>Angaben gemäß § 5 DDG</h2>
+<p>ZEN eGbR<br>Fuchshub 18<br>84571 Reischach<br>Deutschland</p>
+<h2>Registereintrag</h2>
+<p>Eingetragen im Gesellschaftsregister<br>Registergericht: Amtsgericht Traunstein<br>Registernummer: GsR 296</p>
+<h2>Vertreten durch</h2>
+<p>Stephanie Zenker</p>
+<h2>Kontakt</h2>
+<p>Telefon: +49 176 621 21 561<br>E-Mail: <a href="mailto:stephanie.e.zenker@gmail.com">stephanie.e.zenker@gmail.com</a></p>
+<h2>Inhalt der Website</h2>
+<p>Diese Website dient dem Verkauf des Gewerbegrundstücks Flurnummer 107/24, Gemarkung Reischach, im Eigentum der ZEN eGbR. Der Verkauf erfolgt durch die Eigentümerin selbst, ohne Makler. Eine Maklerprovision wird nicht erhoben. Die Angaben sind kein verbindliches Angebot, sondern eine Einladung zur Abgabe von Kaufangeboten.</p>
+<h2>Angaben zum Grundstück</h2>
+<p>Alle Angaben zu Flächen, Preisen, baurechtlichen Kennzahlen und Bauvoranfragen erfolgen nach bestem Wissen, jedoch ohne Gewähr. Positive Bauvoranfragen begründen keinen Anspruch auf eine Baugenehmigung. Maßgeblich sind der Bebauungsplan und der notarielle Kaufvertrag.</p>
+<h2>Beispielrechnungen und Finanzierung</h2>
+<p>Alle Rechnungen, Raten, Zinssätze, Mieteinnahmen, Inflations- und Wertannahmen auf dieser Website, in den Videos und in unseren Beiträgen in sozialen Netzwerken sind unverbindliche Beispielrechnungen zur Ideenfindung. Sie stellen keine Finanzierungs-, Steuer-, Rechts- oder Anlageberatung dar und ersetzen keine Prüfung durch Bank, Steuerberater oder Notar. Ob und zu welchen Konditionen eine Bank finanziert und ob sie das Verkäuferdarlehen als Eigenkapital anerkennt, entscheidet die Bank nach Ihrer Bonität. Das Verkäuferdarlehen ist ein Angebot der Eigentümerin; die Einzelheiten werden im notariellen Kaufvertrag geregelt. Brutto-Angaben enthalten die gesetzliche Umsatzsteuer.</p>
+<h2>Geltung für soziale Netzwerke</h2>
+<p>Dieses Impressum gilt auch für unsere Auftritte in sozialen Netzwerken, insbesondere auf Instagram.</p>
+<h2>Haftung für Inhalte</h2>
+<p>Wir erstellen die Inhalte dieser Website mit Sorgfalt. Für die Richtigkeit, Vollständigkeit und Aktualität übernehmen wir jedoch keine Gewähr. Änderungen und Irrtümer bleiben vorbehalten.</p>
+<h2>Verbraucherstreitbeilegung</h2>
+<p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+<h2>Haftung für Links</h2>
+<p>Für die Inhalte verlinkter externer Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+<h2>Urheberrecht</h2>
+<p>Texte, Fotos und Pläne auf dieser Website unterliegen dem Urheberrecht. Eine Verwendung außerhalb der Grenzen des Urheberrechts bedarf der schriftlichen Zustimmung der Eigentümerin.</p>
+</section>
+</main>
+</body>
+</html>

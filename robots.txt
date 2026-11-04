@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gewerbegrund.info/sitemap.xml

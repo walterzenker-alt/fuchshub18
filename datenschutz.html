@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, follow">
+<title>Datenschutz | Gewerbegrundstück Fuchshub 18</title>
+<style>
+:root{
+  /* Layout: Dossier im Stil eines Planblatts. Graphit, Planpapier, Signalorange wie die Straßenflächen im Bebauungsplan. */
+  --paper:#f4f5f3; --sheet:#ffffff; --ink:#1d2326; --muted:#5b666b; --line:#d5dad9; --accent:#d9620f; --accent-ink:#ffffff; --tint:#eef1f0;
+  --f-display:"Avenir Next Condensed","Roboto Condensed","Arial Narrow","Helvetica Neue",Arial,sans-serif;
+  --f-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#14181a;--sheet:#1c2124;--ink:#e7ebea;--muted:#9aa5a9;--line:#323a3e;--accent:#f08a3c;--accent-ink:#14181a;--tint:#232a2d;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#14181a;--sheet:#1c2124;--ink:#e7ebea;--muted:#9aa5a9;--line:#323a3e;--accent:#f08a3c;--accent-ink:#14181a;--tint:#232a2d;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font:16px/1.6 var(--f-body)}
+.wrap{max-width:1040px;margin:0 auto;padding:32px 20px 64px;display:grid;gap:28px}
+h1,h2,h3{font-family:var(--f-display);line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:clamp(2rem,5vw,3.1rem);font-weight:700}
+h2{font-size:1.6rem;font-weight:600}
+h3{font-size:1.1rem;font-weight:600}
+p{margin:0;max-width:68ch}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sheet{background:var(--sheet);border:1px solid var(--line);padding:28px;display:grid;gap:18px}
+.sec-head{display:flex;gap:14px;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:8px}
+.sec-no{font-family:var(--f-display);font-weight:700;color:var(--accent);font-size:1.1rem;font-variant-numeric:tabular-nums}
+.cover{display:grid;gap:20px}
+.cover img{width:100%;height:auto;display:block;border:1px solid var(--line)}
+.eyebrow{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-size:.9rem}
+.lead{font-size:1.15rem;color:var(--ink)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.kpi{background:var(--sheet);padding:14px 16px;display:grid;gap:2px}
+.kpi b{font-family:var(--f-display);font-size:1.6rem;font-weight:700;font-variant-numeric:tabular-nums}
+.kpi span{color:var(--muted);font-size:.88rem}
+.kpi.hl{background:var(--accent);color:var(--accent-ink)}
+.kpi.hl span{color:var(--accent-ink);opacity:.85}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+figure{margin:0;display:grid;gap:6px}
+figure img{width:100%;height:auto;display:block;border:1px solid var(--line);background:#fff}
+figcaption{font-size:.85rem;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:600;width:42%}
+.tblwrap{overflow-x:auto}
+ul{margin:0;padding-left:1.2em;display:grid;gap:6px;max-width:70ch}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{border:1px solid var(--line);border-top:4px solid var(--accent);padding:16px;display:grid;gap:8px;align-content:start;background:var(--sheet)}
+.card .tag{font-size:.8rem;font-family:var(--f-display);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.pill{display:inline-block;font-size:.78rem;padding:2px 8px;border:1px solid var(--line);background:var(--tint);border-radius:2px}
+.pill.todo{border-color:var(--accent);color:var(--accent)}
+.calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;align-items:stretch}
+.calc .box{background:var(--tint);padding:16px;display:grid;gap:4px}
+.calc .box b{font-family:var(--f-display);font-size:1.5rem;font-variant-numeric:tabular-nums}
+.eq{font-family:var(--f-display);font-size:1.2rem;border-left:4px solid var(--accent);padding:10px 14px;background:var(--tint)}
+.note{font-size:.85rem;color:var(--muted)}
+.todo-box{border:1px dashed var(--accent);padding:12px 14px;font-size:.92rem}
+footer{font-size:.85rem;color:var(--muted);display:grid;gap:4px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-family:var(--f-display);font-weight:600;padding:10px 18px;border:2px solid var(--accent)}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.contact>div{background:var(--tint);padding:14px 16px;line-height:1.7}
+@media print{body{background:#fff}.sheet{break-inside:avoid;border:none;padding:0 0 12px}.wrap{gap:18px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<section class="sheet legal">
+<p><a href="index.html">Zurück zum Grundstück</a></p>
+<h1>Datenschutzerklärung</h1>
+<h2>1. Verantwortliche Stelle</h2>
+<p>ZEN eGbR, Fuchshub 18, 84571 Reischach, vertreten durch Stephanie Zenker<br>Telefon: +49 176 621 21 561<br>E-Mail: <a href="mailto:stephanie.e.zenker@gmail.com">stephanie.e.zenker@gmail.com</a></p>
+<p>Ein Datenschutzbeauftragter ist nicht bestellt, da die gesetzlichen Voraussetzungen dafür nicht vorliegen.</p>
+<h2>2. Keine Cookies, kein Tracking</h2>
+<p>Diese Website setzt keine Cookies und verwendet keine Analyse-, Tracking- oder Marketingdienste. Es gibt keine Kontaktformulare, keine Newsletter und keine eingebetteten Inhalte von Drittanbietern. Schriften, Bilder, Videos und Dokumente werden direkt von dieser Website ausgeliefert und nicht von fremden Servern nachgeladen. Ein Cookie-Banner ist deshalb nicht erforderlich.</p>
+<h2>3. Hosting und Server-Protokolle</h2>
+<p>Die Website wird bei GitHub Pages gehostet, einem Dienst der GitHub B.V., Prins Bernhardplein 200, 1097 JB Amsterdam, Niederlande. Beim Aufruf der Seite verarbeitet GitHub technisch notwendige Daten wie IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, Browser und Betriebssystem in Server-Protokollen, um die Website sicher und stabil auszuliefern. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; unser berechtigtes Interesse liegt in der sicheren Bereitstellung der Website. Eine Verarbeitung in den USA durch die GitHub, Inc. ist möglich; GitHub ist nach dem EU-US Data Privacy Framework zertifiziert (Art. 45 DSGVO). Wir selbst haben keinen Zugriff auf diese Protokolle. Weitere Informationen: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>.</p>
+<p>Die Domain gewerbegrund.info wird bei der IONOS SE, Elgendorfer Str. 57, 56410 Montabaur, verwaltet. Dabei werden nur Namensauflösungen (DNS) verarbeitet, keine Inhalte dieser Website.</p>
+<h2>4. Videos und Dokumente</h2>
+<p>Die Erklärvideos und PDF-Dokumente liegen auf dieser Website selbst. Beim Abspielen oder Herunterladen werden keine Daten an YouTube, Vimeo oder andere Dienste übertragen. Die Videos werden erst geladen, wenn Sie auf Abspielen klicken.</p>
+<h2>5. Kontaktaufnahme per E-Mail, Telefon oder WhatsApp</h2>
+<p>Wenn Sie uns kontaktieren, verarbeiten wir die Angaben, die Sie uns mitteilen (zum Beispiel Name, Telefonnummer, E-Mail-Adresse, Firma und Ihre Nachricht), ausschließlich zur Bearbeitung Ihrer Anfrage, zur Vereinbarung einer Besichtigung und zur Vorbereitung eines möglichen Kaufvertrags. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen), im Übrigen Art. 6 Abs. 1 lit. f DSGVO. Eine Weitergabe an Dritte erfolgt nur, soweit es für den Kauf nötig ist, etwa an Notar, finanzierende Bank oder Steuerberater, und nur mit Ihrem Wissen.</p>
+<p>Ihre Daten werden gelöscht, sobald die Anfrage erledigt ist, spätestens nach 12 Monaten ohne weiteren Kontakt, sofern keine gesetzlichen Aufbewahrungspflichten (zum Beispiel nach Handels- oder Steuerrecht) entgegenstehen.</p>
+<p><b>WhatsApp:</b> Der WhatsApp-Link auf dieser Website öffnet erst nach Ihrem Klick die App oder Website von WhatsApp. Erst dann werden Daten an die WhatsApp Ireland Ltd., Merrion Road, Dublin 4, Irland, übertragen; dabei ist eine Verarbeitung in den USA durch die Meta Platforms Inc. möglich. Für WhatsApp gelten die <a href="https://www.whatsapp.com/legal/privacy-policy-eea">Datenschutzbestimmungen von WhatsApp</a>. Wenn Sie das nicht möchten, erreichen Sie uns jederzeit per Telefon oder E-Mail.</p>
+<h2>6. Links auf andere Websites</h2>
+<p>Diese Website verlinkt auf Dokumente der Gemeinde Reischach. Beim Klick verlassen Sie diese Website; für die Datenverarbeitung dort ist der jeweilige Betreiber verantwortlich.</p>
+<h2>7. Unser Auftritt auf Instagram und anderen sozialen Netzwerken</h2>
+<p>Wir betreiben ein Profil auf Instagram, einem Dienst der Meta Platforms Ireland Ltd., Merrion Road, Dublin 4, Irland. Wenn Sie unser Profil besuchen, mit Beiträgen interagieren oder uns eine Direktnachricht senden, verarbeitet Meta Ihre Daten auch für eigene Zwecke, zum Beispiel für Werbung und Statistiken. Für die Statistiken zu unserem Profil (Insights) sind wir gemeinsam mit Meta verantwortlich (Art. 26 DSGVO); Meta hat dafür die Hauptverantwortung übernommen und ist erste Anlaufstelle für Ihre Rechte. Eine Verarbeitung in den USA ist möglich; Meta ist nach dem EU-US Data Privacy Framework zertifiziert. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (Information über unser Angebot und Kommunikation mit Interessenten) bzw. Art. 6 Abs. 1 lit. b DSGVO bei konkreten Anfragen. Direktnachrichten nutzen wir nur zur Beantwortung Ihrer Anfrage. Weitere Informationen: <a href="https://privacycenter.instagram.com/policy">Datenschutzrichtlinie von Instagram</a> und <a href="https://www.facebook.com/legal/terms/page_controller_addendum">Vereinbarung zur gemeinsamen Verantwortung (Insights)</a>.</p>
+<p>Das gilt entsprechend, falls wir unser Angebot zusätzlich auf Facebook, YouTube, LinkedIn oder in Immobilienportalen veröffentlichen. Dort gelten jeweils die Datenschutzbestimmungen des Anbieters.</p>
+<h2>8. Ihre Rechte</h2>
+<p>Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerruf einer erteilten Einwilligung mit Wirkung für die Zukunft (Art. 7 Abs. 3). Wenden Sie sich dazu formlos an die oben genannten Kontaktdaten.</p>
+<p><b>Widerspruchsrecht (Art. 21 DSGVO):</b> Soweit wir Daten auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO verarbeiten, können Sie dieser Verarbeitung jederzeit aus Gründen widersprechen, die sich aus Ihrer besonderen Situation ergeben.</p>
+<h2>9. Beschwerderecht</h2>
+<p>Sie können sich bei einer Datenschutzaufsichtsbehörde beschweren, zum Beispiel beim Bayerischen Landesamt für Datenschutzaufsicht, Promenade 18, 91522 Ansbach.</p>
+<h2>10. Keine automatisierte Entscheidung</h2>
+<p>Eine automatisierte Entscheidungsfindung oder ein Profiling durch uns findet nicht statt.</p>
+<p class="note">Stand: November 2026</p>
+</section>
+</main>
+</body>
+</html>

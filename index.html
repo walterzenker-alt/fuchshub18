@@ -338,6 +338,12 @@
 .whatsapp-float{width:auto!important;height:auto!important;border-radius:4px!important;background:var(--ink)!important;color:#fff!important;border:1px solid rgba(255,255,255,.25)!important;padding:11px 16px;gap:8px;font-weight:600;font-size:14px;box-shadow:0 6px 20px rgba(0,0,0,.18)!important}
 .whatsapp-float:hover{transform:none!important}
 .whatsapp-float svg{width:20px!important;height:20px!important}
+.video-wrap{display:grid;grid-template-columns:1fr 360px;gap:56px;align-items:center}
+.video-text h2{font-size:clamp(28px,3.4vw,42px);line-height:1.1;letter-spacing:-.03em;margin:0 0 16px}
+.video-text p{color:var(--muted);margin:0 0 24px;max-width:46ch}
+.video-text .video-note{font-size:13px;margin:16px 0 0}
+.video-frame video{display:block;width:100%;aspect-ratio:9/16;border-radius:8px;background:var(--ink)}
+@media(max-width:860px){.video-wrap{grid-template-columns:1fr;gap:28px}.video-frame{max-width:360px;margin:0 auto;width:100%}}
 </style>
   <script type="application/ld+json">
 {
@@ -424,7 +430,7 @@
   <div class="topbar"><div class="container"><span class="topbar-place">Gewerbegrund an der B 588 · nahe A94 · Fuchshub 18 · 84571 Reischach</span><div class="topbar-contact"><a href="tel:+4915152638184" aria-label="Anrufen: +49 1515 263 81 84">☎&nbsp;+49&nbsp;1515&nbsp;263&nbsp;81&nbsp;84</a><a href="mailto:stephanie.e.zenker@gmail.com?subject=Anfrage%20Gewerbegrundst%C3%BCck%20Reischach" aria-label="E-Mail an stephanie.e.zenker@gmail.com">✉&nbsp;stephanie.e.zenker@gmail.com</a></div></div></div>
   <header class="container nav">
     <a class="brand" href="#start" aria-label="Gewerbegrund Startseite">GEWERBEGRUND<small>REISCHACH · NAHE A94</small></a>
-    <nav class="nav-links" aria-label="Hauptnavigation"><a href="#finanzierung">Finanzierung</a><a href="#grundstueck">Das Grundstück</a><a href="#baurechner">Baurechner</a><a href="#fragen">Fragen & Antworten</a><a class="btn btn-dark btn-sm" href="anfrage/">Anfrage stellen</a></nav>
+    <nav class="nav-links" aria-label="Hauptnavigation"><a href="#finanzierung">Finanzierung</a><a href="#video">Video</a><a href="#grundstueck">Das Grundstück</a><a href="#baurechner">Baurechner</a><a href="#fragen">Fragen & Antworten</a><a class="btn btn-dark btn-sm" href="anfrage/">Anfrage stellen</a></nav>
   </header>
   <main>
     <div class="container" id="start"><section class="hero" aria-label="Gewerbegrundstück und Verkäuferdarlehen">
@@ -471,6 +477,15 @@
         <div class="legend"><span class="left"><i class="square pale"></i>Übriger Kaufpreis</span><strong>950.000 €</strong></div>
         <p class="disclaimer">Rechnerisch deckt das Verkäuferdarlehen bis zu 24 % des Kaufpreises ab; das bedeutet nicht automatisch 24 % anrechenbares Eigenkapital. Der restliche Kaufpreis ist nicht automatisch von der Bank finanziert. Kaufnebenkosten kommen hinzu. Eigenkapitalanerkennung, Bankzins und Kreditentscheidung liegen bei der finanzierenden Bank. Keine Vollfinanzierungs- oder Zinszusage.</p>
       </div>
+    </div></section>
+    <section class="section video-section" id="video"><div class="container video-wrap">
+      <div class="video-text"><div class="eyebrow"><i></i>Das Video · 2 Minuten</div>
+        <h2>Warum dieses Grundstück anders ist.</h2>
+        <p>Verkäuferdarlehen zu 2,6&nbsp;%, zehn vermietete Garagen, Wohnen auf dem Betriebsgelände und warum wir verkaufen. Alles in zwei Minuten erklärt.</p>
+        <a class="btn btn-dark" href="anfrage/">Anfrage stellen</a>
+        <p class="video-note">Beispielrechnung, keine Finanzierungs-, Steuer- oder Anlageberatung. Ohne eigenes Geld nur mit Bankzusage.</p>
+      </div>
+      <div class="video-frame"><video controls playsinline preload="none" poster="verkaufsvideo.jpg" aria-label="Verkaufsvideo Gewerbegrundstück Reischach"><source src="verkaufsvideo.mp4" type="video/mp4"></video></div>
     </div></section>
     <section class="dark-section" id="chance"><div class="container">
       <div class="label">Eine Gelegenheit mit belegter Nachfrage</div>

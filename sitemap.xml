@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://gewerbegrund.info/</loc>
     <lastmod>2026-11-11</lastmod>
+    <image:image><image:loc>https://gewerbegrund.info/gewerbegrund-vorschau.jpg</image:loc></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://gewerbegrund.info/reel-verkaeuferdarlehen-garagen.jpg</video:thumbnail_loc>
+      <video:title>Gewerbegrundstück Reischach: ohne Eigenkapital, ohne Makler, Einnahmen ab Tag 1</video:title>
+      <video:description>5.000 m² Gewerbegrund an der B 588 nahe A94: Verkäuferdarlehen bis 300.000 € zu 2,6 %, 10 vermietete Garagen, direkt von der Eigentümerin.</video:description>
+      <video:content_loc>https://gewerbegrund.info/reel-verkaeuferdarlehen-garagen.mp4</video:content_loc>
+      <video:duration>26</video:duration>
+    </video:video>
   </url>
 </urlset>

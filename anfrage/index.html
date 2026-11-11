@@ -65,10 +65,19 @@ h1{font-size:28px;line-height:1.15;letter-spacing:-.02em;margin:0 0 8px}
 .who img{width:56px;height:56px;border-radius:50%;object-fit:cover}
 .who b{display:block}.who span{font-size:14px;color:var(--muted)}
 .who a{color:var(--ink)}
+.anav{max-width:640px;margin:0 auto;padding:18px 16px 0;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.abrand{font-size:18px;font-weight:850;letter-spacing:-.07em;color:var(--ink);text-decoration:none;line-height:1.1}
+.abrand small{display:block;font-size:9px;letter-spacing:.12em;font-weight:750;color:var(--muted)}
+.anav nav{display:flex;align-items:center;gap:18px;font-size:13px;font-weight:700}
+.anav nav a{color:#4a594f;text-decoration:none}
+.anav nav a:hover{color:var(--ink)}
+.anav .aback{border:1px solid var(--ink);color:var(--ink);border-radius:4px;padding:8px 12px}
+@media(max-width:560px){.anav nav a:not(.aback){display:none}}
 .addr{font-size:12px;color:var(--muted);line-height:1.55;margin-top:24px}.addr a{color:var(--ink)}
 @media(max-width:480px){.two{grid-template-columns:1fr}.opt small{display:none}.facts b{font-size:17px}}
 </style></head><body>
 <div class="topbar"><div class="container"><span class="topbar-place">Gewerbegrund an der B 588 · nahe A94 · Fuchshub 18 · 84571 Reischach</span><div class="topbar-contact"><a href="tel:+4915152638184" aria-label="Anrufen: +49 1515 263 81 84">☎&nbsp;+49&nbsp;1515&nbsp;263&nbsp;81&nbsp;84</a><a href="mailto:stephanie.e.zenker@gmail.com?subject=Anfrage%20Gewerbegrundst%C3%BCck%20Reischach" aria-label="E-Mail an stephanie.e.zenker@gmail.com">✉&nbsp;stephanie.e.zenker@gmail.com</a></div></div></div>
+<header class="anav"><a class="abrand" href="../" aria-label="Zur Startseite">GEWERBEGRUND<small>REISCHACH · NAHE A94</small></a><nav aria-label="Navigation"><a href="../#grundstueck">Das Grundstück</a><a href="../#expose">Exposé</a><a href="../#fragen">Fragen</a><a class="aback" href="../">Zur Startseite</a></nav></header>
 <main>
 <h1>Anfrage zum Gewerbegrundstück Fuchshub 18</h1>
 <p class="lead">Ca. 5.000 m² Gewerbegrund in Reischach mit zehn vermieteten Garagen. Verkauf direkt durch die Eigentümerin.</p>
@@ -80,8 +89,6 @@ h1{font-size:28px;line-height:1.15;letter-spacing:-.02em;margin:0 0 8px}
 
 <section class="step" aria-labelledby="s1"><h2 id="s1">1. Ihr Anliegen</h2><p class="sub">Mehrfachauswahl möglich.</p>
 <div class="list" id="wants">
-<button type="button" class="opt" aria-pressed="false" data-v="Variante A: ca. 5.000 m² mit 10 Garagen (1.250.000 €)"><svg class="pi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="1"/><path d="M12 5v14"/></svg><b>Variante A: 5.000 m² mit Garagen</b><small>1.250.000 €</small></button>
-<button type="button" class="opt" aria-pressed="false" data-v="Variante B: ca. 4.000 m² ohne Garagen (860.000 €)"><svg class="pi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="1"/><path d="M12 5v14"/></svg><b>Variante B: 4.000 m² ohne Garagen</b><small>860.000 €</small></button>
 <button type="button" class="opt" aria-pressed="false" data-v="den Bebauungsplan und die Grundstücksunterlagen"><svg class="pi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 15h6M9 18h4"/></svg><b>Bebauungsplan und Unterlagen</b><small>B-Plan Nr. 16, Lageplan</small></button>
 <button type="button" class="opt" aria-pressed="false" data-v="das Exposé als PDF"><svg class="pi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5C6.5 4.5 9 4.5 12 6c3-1.5 5.5-1.5 8-.5v13c-2.5-1-5-1-8 .5-3-1.5-5.5-1.5-8-.5z"/><path d="M12 6v13.5"/></svg><b>Exposé (PDF)</b><small>alle Eckdaten kompakt</small></button>
 <button type="button" class="opt" aria-pressed="false" data-v="einen Besichtigungstermin vor Ort"><svg class="pi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6-5.5-6-10a6 6 0 0 1 12 0c0 4.5-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg><b>Besichtigung vor Ort</b><small>Fuchshub 18, Reischach</small></button>
@@ -98,10 +105,11 @@ h1{font-size:28px;line-height:1.15;letter-spacing:-.02em;margin:0 0 8px}
 <button type="button" class="opt" aria-pressed="false" data-w="video"><svg class="pi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6.5" width="12.5" height="11" rx="1.5"/><path d="M15.5 10.5l5-3v9l-5-3"/></svg><b>Videoanruf</b><small>Termin nach Absprache</small></button>
 </div></section>
 
-<section class="step" aria-labelledby="s3"><h2 id="s3">3. Ihre Angaben</h2><p class="sub">Freiwillig.</p>
+<section class="step" aria-labelledby="s3"><h2 id="s3">3. Ihre Angaben</h2><p class="sub">Bitte mindestens Ihre E-Mail-Adresse angeben.</p>
 <div class="fields">
 <div class="two"><div><label for="n">Name</label><input id="n" autocomplete="name"></div><div><label for="f">Firma</label><input id="f" autocomplete="organization"></div></div>
-<div class="two"><div><label for="t">Telefon</label><input id="t" type="tel" autocomplete="tel"></div><div><label for="z">Wunschtermin</label><input id="z" placeholder="z. B. Freitag Vormittag"></div></div>
+<div class="two"><div><label for="e">E-Mail *</label><input id="e" type="email" autocomplete="email" required aria-required="true" placeholder="name@firma.de"></div><div><label for="t">Telefon</label><input id="t" type="tel" autocomplete="tel"></div></div>
+<div><label for="z">Wunschtermin</label><input id="z" placeholder="z. B. Freitag Vormittag"></div>
 <div><label for="m">Nachricht</label><textarea id="m" rows="3" placeholder="z. B. geplante Nutzung, Zeitplan, Fragen"></textarea></div>
 </div></section>
 
@@ -132,7 +140,7 @@ h1{font-size:28px;line-height:1.15;letter-spacing:-.02em;margin:0 0 8px}
 <div class="who"><img src="../stephanie.jpg" alt="Stephanie Zenker"><div><b>Stephanie Zenker · ZEN eGbR</b><span><a href="tel:+4915152638184">+49 1515 263 81 84</a> · <a href="mailto:stephanie.e.zenker@gmail.com">stephanie.e.zenker@gmail.com</a></span></div></div>
 <div class="addr">Alle Informationen zum Grundstück: <a href="../">gewerbegrund.info</a> · <a href="../#impressum">Impressum</a> · <a href="../#datenschutz">Datenschutz</a><br>
 <b>Privatverkauf durch die Eigentümerin, kein Makler.</b> Beispiele, Rechnungen und Nutzungsideen dienen nur der unverbindlichen Ideenfindung und sind keine Rechts-, Steuer- oder Finanzierungsberatung; verbindlich ist nur der notarielle Kaufvertrag.<br>Diese Seite speichert und überträgt keine Daten. Ihre Angaben gehen erst an uns, wenn Sie die Nachricht in Ihrem E-Mail-Programm oder in WhatsApp selbst absenden.<br>
-Verkäuferdarlehen (Variante A bis 300.000 €, Variante B bis 210.000 €): Sollzins 2,6 % p. a., fest für 10 Jahre, effektiver Jahreszins 2,63 %, nach Bonitätsprüfung, kein Anspruch. Ob Ihre Bank es als Eigenkapital anerkennt, entscheidet die Bank.</div>
+Verkäuferdarlehen bis 300.000 €: Sollzins 2,6 % p. a., fest für 10 Jahre, effektiver Jahreszins 2,63 %, nach Bonitätsprüfung, kein Anspruch. Ob Ihre Bank es als Eigenkapital anerkennt, entscheidet die Bank.</div>
 </main>
 <script>
 (function(){
@@ -144,7 +152,7 @@ Verkäuferdarlehen (Variante A bis 300.000 €, Variante B bis 210.000 €): Sol
   try{var q=new URLSearchParams(location.search).get('thema');if(q){wants.forEach(function(b){if(b.dataset.v.toLowerCase().indexOf(q.toLowerCase())>=0)b.setAttribute('aria-pressed','true');});}}catch(e){}
   wants.forEach(function(b){b.addEventListener('click',function(){b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')==='true'?'false':'true');upd();});});
   ways.forEach(function(b){b.addEventListener('click',function(){ways.forEach(function(x){x.setAttribute('aria-pressed','false');});b.setAttribute('aria-pressed','true');upd();});});
-  ['n','f','t','z','m'].forEach(function(id){document.getElementById(id).addEventListener('input',upd);});
+  ['n','f','e','t','z','m'].forEach(function(id){document.getElementById(id).addEventListener('input',upd);});
   var ok=document.getElementById('ok');ok.addEventListener('change',upd);
   var ds=document.getElementById('ds');document.getElementById('dsl').addEventListener('click',function(e){e.preventDefault();ds.open=true;ds.scrollIntoView({block:'nearest'});});
   document.getElementById('dsc').addEventListener('click',function(){ds.open=false;ok.scrollIntoView({block:'center'});});
@@ -158,10 +166,11 @@ Verkäuferdarlehen (Variante A bis 300.000 €, Variante B bis 210.000 €): Sol
     if(way==='tel') txt+='\n\nBitte rufen Sie mich zurück.';
     if($('z')) txt+='\nWunschtermin: '+$('z');
     if($('m')) txt+='\n\n'+$('m');
-    var sig=[$('n'),$('f'),$('t')?'Tel. '+$('t'):''].filter(Boolean);
+    var sig=[$('n'),$('f'),$('e')?'E-Mail: '+$('e'):'',$('t')?'Tel. '+$('t'):''].filter(Boolean);
     if(sig.length) txt+='\n\nViele Grüße\n'+sig.join('\n');
     pv.textContent=txt;
-    if(ok.checked){send.removeAttribute('aria-disabled');}else{send.setAttribute('aria-disabled','true');}
+    var mailok=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test($('e'));
+    if(ok.checked&&mailok){send.removeAttribute('aria-disabled');}else{send.setAttribute('aria-disabled','true');}
     if(way==='mail'){
       var subj='Anfrage Gewerbegrundstück Reischach'+(sel.length?': '+sel.join(', '):'');
       send.href='mailto:'+MAIL+'?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(txt);
@@ -175,6 +184,8 @@ Verkäuferdarlehen (Variante A bis 300.000 €, Variante B bis 210.000 €): Sol
       send.textContent=(way==='video'?'Videoanruf per WhatsApp anfragen':'Anfrage per WhatsApp senden');
       hint.textContent='Ihre Nachricht öffnet sich fertig formuliert in WhatsApp. Es wird nichts automatisch gesendet.';
     }
+    if(!mailok) hint.textContent='Bitte tragen Sie Ihre E-Mail-Adresse ein.';
+    else if(!ok.checked) hint.textContent='Bitte bestätigen Sie noch die Datenschutzhinweise.';
   }
   upd();
 })();

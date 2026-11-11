@@ -344,6 +344,15 @@
 .video-text .video-note{font-size:13px;margin:16px 0 0}
 .video-frame video{display:block;width:100%;aspect-ratio:9/16;border-radius:8px;background:var(--ink)}
 @media(max-width:860px){.video-wrap{grid-template-columns:1fr;gap:28px}.video-frame{max-width:360px;margin:0 auto;width:100%}}
+.ex-wrap{display:grid;grid-template-columns:minmax(0,340px) 1fr;gap:56px;align-items:center}
+.ex-thumb{display:block;border:1px solid var(--line);border-radius:4px;overflow:hidden;box-shadow:0 18px 40px rgba(17,37,30,.12);background:#fff}
+.ex-thumb img{display:block;width:100%;height:auto}
+.ex-list{margin:0 0 28px;padding:0;list-style:none;display:grid;gap:10px}
+.ex-list li{padding-left:22px;position:relative;line-height:1.45}
+.ex-list li:before{content:"";position:absolute;left:2px;top:.55em;width:8px;height:8px;border-radius:50%;background:#3f9a4c}
+.ex-btns{display:flex;flex-wrap:wrap;gap:12px}
+.ex-meta{font-size:13px;color:var(--muted);margin-top:12px}
+@media(max-width:820px){.ex-wrap{grid-template-columns:1fr;gap:32px}.ex-thumb{max-width:260px}.ex-btns .btn{flex:1 1 100%;text-align:center}}
 .var-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:28px}
 .var-card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:28px;display:flex;flex-direction:column;gap:18px}
 .var-tag{display:inline-block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#3d6244;margin-bottom:6px}
@@ -368,7 +377,7 @@
   {
    "@type": "FAQPage",
    "@id": "https://gewerbegrund.info/#fragen",
-   "mainEntity": [{"@type":"Question","name":"Gibt es eine kleinere Variante ohne Garagen?","acceptedAnswer":{"@type":"Answer","text":"Ja. Variante B umfasst ca. 4.000 m² Gewerbegrund ohne die Garagen für 860.000 €, mit einem Verkäuferdarlehen bis 210.000 € zu 2,6 % Zins pro Jahr. Die genaue Fläche ergibt sich aus der Teilungsvermessung."}},
+   "mainEntity": [
     {
      "@type": "Question",
      "name": "Wo liegt das angebotene Gewerbegrundstück?",
@@ -446,7 +455,7 @@
   <div class="topbar"><div class="container"><span class="topbar-place">Gewerbegrund an der B 588 · nahe A94 · Fuchshub 18 · 84571 Reischach</span><div class="topbar-contact"><a href="tel:+4915152638184" aria-label="Anrufen: +49 1515 263 81 84">☎&nbsp;+49&nbsp;1515&nbsp;263&nbsp;81&nbsp;84</a><a href="mailto:stephanie.e.zenker@gmail.com?subject=Anfrage%20Gewerbegrundst%C3%BCck%20Reischach" aria-label="E-Mail an stephanie.e.zenker@gmail.com">✉&nbsp;stephanie.e.zenker@gmail.com</a></div></div></div>
   <header class="container nav">
     <a class="brand" href="#start" aria-label="Gewerbegrund Startseite">GEWERBEGRUND<small>REISCHACH · NAHE A94</small></a>
-    <nav class="nav-links" aria-label="Hauptnavigation"><a href="#finanzierung">Finanzierung</a><a href="#video">Video</a><a href="#grundstueck">Das Grundstück</a><a href="#baurechner">Baurechner</a><a href="#fragen">Fragen & Antworten</a><a class="btn btn-dark btn-sm" href="anfrage/">Anfrage stellen</a></nav>
+    <nav class="nav-links" aria-label="Hauptnavigation"><a href="#finanzierung">Finanzierung</a><a href="#video">Video</a><a href="#grundstueck">Das Grundstück</a><a href="#expose">Exposé</a><a href="#baurechner">Baurechner</a><a href="#fragen">Fragen & Antworten</a><a class="btn btn-dark btn-sm" href="anfrage/">Anfrage stellen</a></nav>
   </header>
   <main>
     <div class="container" id="start"><section class="hero" aria-label="Gewerbegrundstück und Verkäuferdarlehen">
@@ -525,42 +534,26 @@
           <div class="feature"><strong>Betriebsleiterwohnung</strong><span>Im Rahmen der Festsetzungen zulässig</span></div>
           <div class="feature"><strong>Nahe B588 und A94</strong><span>Gewerbegebiet Fuchshub · Landkreis Altötting</span></div>
         </div>
-        <p class="price">Kaufpreis <strong>1.250.000 €</strong> inklusive 10 vermieteter Garagen · oder <a href="#varianten">ca. 4.000 m² ohne Garagen für 860.000 €</a></p>
+        <p class="price">Kaufpreis <strong>1.250.000 €</strong> inklusive 10 vermieteter Garagen</p>
         <p style="font-size:12px;color:#647668;margin:9px 0 20px">Direkt von der Eigentümerin · keine Käuferprovision · Kaufnebenkosten zusätzlich</p>
         <div class="plan-request"><a class="btn btn-dark" href="anfrage/?thema=bebauungsplan">Bebauungsplan anfordern</a><a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=Fuchshub%2018%2C%2084571%20Reischach" target="_blank" rel="noopener">Lage in Google Maps</a></div>
       </div>
     </div></section>
 
-    <section class="section varianten-section" id="varianten"><div class="container">
-      <div class="label">Zwei Möglichkeiten</div>
-      <h2 class="section-title">Wählen Sie Ihre Variante.</h2>
-      <div class="var-grid">
-        <article class="var-card">
-          <div class="var-head"><span class="var-tag">Variante A</span><h3>Gesamtfläche mit Garagen</h3></div>
-          <div class="var-price">1.250.000&nbsp;€</div>
-          <ul class="var-list">
-            <li><b>ca. 5.000 m²</b> Gewerbegrund, Flurstück 107/24</li>
-            <li><b>10 vermietete Garagen</b>: 18.564 € brutto (15.600 € netto) Miete pro Jahr</li>
-            <li><b>Einnahmen ab dem ersten Tag</b></li>
-            <li>Betriebsleiterwohnung zulässig</li>
-          </ul>
-          <div class="var-loan"><span class="var-rate">2,6&nbsp;%</span><span>Verkäuferdarlehen<br><b>bis 300.000 €</b></span></div>
-          <a class="btn btn-dark" href="anfrage/?thema=variante%20a">Variante A anfragen</a>
-        </article>
-        <article class="var-card">
-          <div class="var-head"><span class="var-tag">Variante B</span><h3>Grundstück ohne Garagen</h3></div>
-          <div class="var-price">860.000&nbsp;€</div>
-          <ul class="var-list">
-            <li><b>ca. 4.000 m²</b> Gewerbegrund</li>
-            <li><b>ohne Garagen</b>, die Garagen bleiben bei der Eigentümerin</li>
-            <li>Gleiches Baurecht: GRZ 0,8 · GFZ 1,6</li>
-            <li>Betriebsleiterwohnung zulässig</li>
-          </ul>
-          <div class="var-loan"><span class="var-rate">2,6&nbsp;%</span><span>Verkäuferdarlehen<br><b>bis 210.000 €</b></span></div>
-          <a class="btn btn-dark" href="anfrage/?thema=variante%20b">Variante B anfragen</a>
-        </article>
+    <section class="section expose-section" id="expose"><div class="container ex-wrap">
+      <a class="ex-thumb" href="expose-gewerbegrund-reischach.pdf" target="_blank" rel="noopener"><img src="expose-vorschau.jpg" width="744" height="1053" loading="lazy" alt="Titelseite des Exposés: Flurkarte mit dem Grundstück Fuchshub 18"></a>
+      <div class="ex-text">
+        <div class="label">Exposé</div>
+        <h2 class="section-title">Alle Eckdaten auf fünf Seiten.</h2>
+        <ul class="ex-list">
+          <li>Lage, Flurkarte und Baurecht</li>
+          <li>10 vermietete Garagen: 18.564 € brutto (15.600 € netto) Miete pro Jahr</li>
+          <li>Verkäuferdarlehen 2,6&nbsp;% mit Beispielrechnung</li>
+          <li>Ideen für das Grundstück</li>
+        </ul>
+        <div class="ex-btns"><a class="btn btn-dark" href="expose-gewerbegrund-reischach.pdf" download>Exposé herunterladen</a><a class="btn btn-outline" href="anfrage/">Anfrage stellen</a></div>
+        <p class="ex-meta">PDF, 5 Seiten, 1,2 MB</p>
       </div>
-      <p class="var-note">Beide Varianten direkt von der Eigentümerin, ohne Maklerprovision, Kaufnebenkosten zusätzlich. Variante B setzt eine Teilungsvermessung voraus; die genaue Fläche ergibt sich daraus. Verkäuferdarlehen: gebundener Sollzins 2,6&nbsp;% p.&nbsp;a. für 10 Jahre, effektiver Jahreszins 2,63&nbsp;%, in 10 Jahren getilgt. Beispiel A: 300.000 € Nettodarlehensbetrag, 120 Monatsraten zu 2.841,76 €, Gesamtbetrag 341.011,16 €. Beispiel B: 210.000 €, 120 Monatsraten zu 1.989,23 €, Gesamtbetrag 238.707,81 €. Darlehensgeberin ZEN eGbR, nach Bonitätsprüfung, kein Anspruch.</p>
     </div></section>
     <section class="build-section" id="baurechner" aria-labelledby="build-title"><div class="container"><div class="build-panel">
       <div class="build-heading"><div><div class="label">Interaktiver Flächen-Check</div><h2 class="section-title" id="build-title">Wie viel Platz hat Ihre Idee?</h2><p>Zum Start sind <strong>4.500 m² Neubau-Gesamtfläche</strong> und <strong>1.200 m² Außenflächen</strong> eingeplant. Beide Werte lassen sich anpassen – rechts sehen Sie die verbleibende rechnerische Reserve.</p></div><span class="build-tag">5.000 m² Grundstück · GRZ 0,8 · GFZ 1,6</span></div>
@@ -581,7 +574,6 @@
       <div class="faq-grid">
         <details><summary>Wo liegt das angebotene Gewerbegrundstück?</summary><p>Das Grundstück liegt im Gewerbegebiet Fuchshub, Fuchshub 18, 84571 Reischach, im Landkreis Altötting. Über die B 588 ist die A 94 erreichbar.</p></details>
         <details><summary>Welches Flurstück steht zum Verkauf?</summary><p>Zum Verkauf steht das Flurstück 107/24 mit rund 5.000 m² Grundstücksfläche. Flurstück 107/45 ist bereits verkauft. Die farbige Karte auf dieser Seite ist eine schematische Markierung und ersetzt keinen amtlichen Lageplan.</p></details>
-        <details><summary>Gibt es eine kleinere Variante ohne Garagen?</summary><p>Ja. Variante B umfasst ca. 4.000 m² Gewerbegrund ohne die Garagen für 860.000 €, mit einem Verkäuferdarlehen bis 210.000 € zu 2,6 % Zins pro Jahr. Die genaue Fläche ergibt sich aus der Teilungsvermessung.</p></details>
         <details><summary>Was kosten Grundstück und bestehende Garagen?</summary><p>Der Kaufpreis beträgt 1.250.000 € inklusive zehn vermieteter Garagen. Die angegebenen jährlichen Nettomieteinnahmen aus den Garagen betragen 15.600 €. Der Verkauf erfolgt direkt durch die Eigentümerin ohne Käuferprovision.</p></details>
         <details><summary>Wie funktioniert das Verkäuferdarlehen zu 2,6 %?</summary><p>Die Verkäuferin bietet für einen Teil des Kaufpreises bis zu 300.000 € Darlehen zu 2,6 % Zinsen pro Jahr an. Dadurch sinkt der Betrag, der für den Kauf über die Bank oder eigene Mittel gedeckt werden muss. Laufzeit, Tilgung, Sicherheiten und eine mögliche Nachrangvereinbarung werden individuell vereinbart.</p></details>
         <details><summary>Spare ich damit Bankzinsen und bekomme ich günstigere Bankkonditionen?</summary><p>Für den durch das Verkäuferdarlehen finanzierten Anteil wird kein zusätzlicher Bankkredit benötigt. Liegt der Zins für einen vergleichbaren Bankkredit über 2,6 % p. a., kann sich daraus ein Zinsvorteil ergeben. Ob die Bank für den verbleibenden Kredit einen niedrigeren Zinssatz anbietet, hängt von deren Bonitäts- und Sicherheitenprüfung ab. Eine Ersparnis oder Kreditzusage ist nicht garantiert.</p></details>

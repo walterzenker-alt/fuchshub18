@@ -1,36 +1,130 @@
 <!doctype html>
 <html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jetzt anfragen | Gewerbegrundstück Reischach</title>
-<meta name="description" content="Anfrage zum Gewerbegrundstück in Reischach: per E-Mail, WhatsApp oder Telefon direkt an die Eigentümerin.">
+<meta name="description" content="Anfrage zum Gewerbegrundstück in Reischach: Bebauungsplan, Besichtigung, Video-Besichtigung oder Finanzierung anfragen, per E-Mail, WhatsApp oder Telefon direkt bei der Eigentümerin.">
 <link rel="canonical" href="https://gewerbegrund.info/anfrage/">
 <meta property="og:title" content="Jetzt anfragen: Gewerbegrundstück Reischach">
 <meta property="og:description" content="Ohne Eigenkapital¹. Ohne Makler. Einnahmen ab Tag 1. Verkäuferdarlehen zu 2,6 %.">
 <meta property="og:image" content="https://gewerbegrund.info/gewerbegrund-vorschau.jpg">
 <meta name="theme-color" content="#11251e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2311251e'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='700' font-size='34' text-anchor='middle' fill='%23d9ed8b'%3EG%3C/text%3E%3C/svg%3E">
 <style>
-:root{--ink:#11251e;--lime:#d9ed8b}*{box-sizing:border-box}
-body{margin:0;min-height:100vh;background:var(--ink);color:#fff;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;display:flex;align-items:center;justify-content:center;padding:28px 18px}
-main{width:100%;max-width:460px}
-.brand{font-weight:800;letter-spacing:.06em;font-size:13px;color:#b7c9bc}
-h1{font-size:34px;line-height:1.08;letter-spacing:-.035em;margin:18px 0 6px}
-h2{font-size:22px;line-height:1.25;color:var(--lime);margin:0 0 22px;font-weight:800}
-.rate{display:flex;align-items:baseline;gap:10px;border:2px solid var(--lime);border-radius:16px;padding:14px 18px;margin-bottom:22px}
-.rate b{white-space:nowrap;font-size:40px;color:var(--lime);letter-spacing:-.03em} .rate span{color:#cfe0d4;font-size:15px}
-a.btn{display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:800;font-size:19px;border-radius:14px;padding:19px;margin-bottom:12px}
-.mail{background:var(--lime);color:var(--ink)} .wa{background:#25d366;color:#0b2a17} .tel{background:transparent;color:#fff;border:2px solid #4b6756}
-.who{display:flex;align-items:center;gap:14px;margin:22px 0 10px;background:#f8f8f3;color:var(--ink);border-radius:16px;padding:14px}
-.who img{width:62px;height:62px;border-radius:50%;object-fit:cover} .who b{display:block} .who span{font-size:14px;color:#4d6254}
-.addr{font-size:13px;color:#8fa596;line-height:1.5;margin-top:14px} .addr a{color:#cfe0d4}
+:root{--ink:#11251e;--ink2:#1b3328;--lime:#d9ed8b;--line:#3d5a4a;--muted:#a9bdb0}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:#fff;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;padding:26px 16px 40px}
+main{max-width:520px;margin:0 auto}
+.brand{font-weight:800;letter-spacing:.06em;font-size:12px;color:var(--muted)}
+h1{font-size:32px;line-height:1.08;letter-spacing:-.035em;margin:16px 0 6px}
+.claim{font-size:20px;line-height:1.25;color:var(--lime);margin:0 0 18px;font-weight:800}
+.rate{display:flex;align-items:baseline;gap:12px;border:2px solid var(--lime);border-radius:16px;padding:12px 16px;margin-bottom:26px}
+.rate b{white-space:nowrap;font-size:38px;color:var(--lime);letter-spacing:-.03em}.rate span{color:#cfe0d4;font-size:14px;line-height:1.35}
+.step{margin-bottom:24px}
+.step h2{font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 12px;font-weight:800}
+.step h2 i{font-style:normal;display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--lime);color:var(--ink);margin-right:8px;font-size:13px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opt{position:relative;display:flex;flex-direction:column;gap:4px;text-align:left;border:2px solid var(--line);background:var(--ink2);color:#fff;border-radius:14px;padding:14px 14px 13px;cursor:pointer;font:inherit;transition:border-color .15s,background .15s}
+.opt .ic{font-size:24px;line-height:1}
+.opt b{font-size:15px;line-height:1.2}
+.opt small{font-size:12px;color:var(--muted);line-height:1.3}
+.opt[aria-pressed="true"]{border-color:var(--lime);background:#284a37}
+.opt[aria-pressed="true"]::after{content:"✓";position:absolute;top:9px;right:11px;width:22px;height:22px;border-radius:50%;background:var(--lime);color:var(--ink);font-weight:900;font-size:13px;display:grid;place-items:center}
+.fields{display:grid;gap:10px}
+.fields label{display:block;font-size:13px;color:var(--muted);margin-bottom:5px}
+.fields input,.fields textarea{width:100%;border:2px solid var(--line);background:var(--ink2);color:#fff;border-radius:12px;padding:12px 13px;font:inherit;font-size:16px}
+.fields input:focus,.fields textarea:focus,.opt:focus-visible,.send:focus-visible{outline:none;border-color:var(--lime)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.preview{background:#0c1c16;border:1px dashed var(--line);border-radius:12px;padding:12px 14px;font-size:13px;line-height:1.5;color:#cfe0d4;white-space:pre-wrap;margin:6px 0 14px}
+.send{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;text-decoration:none;font-weight:850;font-size:19px;border-radius:14px;padding:19px;border:0;cursor:pointer;background:var(--lime);color:var(--ink)}
+.send.wa{background:#25d366;color:#0b2a17}
+.send[aria-disabled="true"]{opacity:.45;pointer-events:none}
+.hint{font-size:12px;color:var(--muted);margin-top:8px;text-align:center}
+.who{display:flex;align-items:center;gap:14px;margin:26px 0 10px;background:#f8f8f3;color:var(--ink);border-radius:16px;padding:14px}
+.who img{width:62px;height:62px;border-radius:50%;object-fit:cover}.who b{display:block}.who span{font-size:14px;color:#4d6254}
+.direct{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:14px;margin-top:12px}
+.direct a{color:var(--lime);font-weight:700;text-decoration:none}
+.addr{font-size:12px;color:#8fa596;line-height:1.5;margin-top:16px}.addr a{color:#cfe0d4}
+@media(max-width:360px){.grid,.two{grid-template-columns:1fr}}
 </style></head><body><main>
 <div class="brand">GEWERBEGRUND · FUCHSHUB 18 · REISCHACH</div>
 <h1>Ihr Gewerbestandort.</h1>
-<h2>Ohne Eigenkapital.¹<br>Ohne Makler.<br>Einnahmen ab Tag 1.</h2>
-<div class="rate"><b>2,6 %</b><span>Verkäuferdarlehen bis 300.000 €</span></div>
-<a class="btn mail" href="mailto:stephanie.e.zenker@gmail.com?subject=Anfrage%20Gewerbegrundst%C3%BCck%20Reischach&body=Guten%20Tag%20Frau%20Zenker%2C%0A%0Aich%20interessiere%20mich%20f%C3%BCr%20das%20Gewerbegrundst%C3%BCck%20in%20Reischach%20%285.000%20m%C2%B2%2C%20Verk%C3%A4uferdarlehen%20zu%202%2C6%20%25%29.%20Bitte%20senden%20Sie%20mir%20weitere%20Informationen.%0A%0AName%3A%0AFirma%3A%0ATelefon%3A%0A">✉ Jetzt per E-Mail anfragen</a>
-<a class="btn wa" href="https://wa.me/4915152638184?text=Guten%20Tag%20Frau%20Zenker%2C%20ich%20interessiere%20mich%20f%C3%BCr%20das%20Gewerbegrundst%C3%BCck%20in%20Reischach.%20Bitte%20melden%20Sie%20sich%20bei%20mir." target="_blank" rel="noopener">Per WhatsApp anfragen</a>
-<a class="btn tel" href="tel:+4915152638184">Anrufen: +49 1515 263 81 84</a>
+<p class="claim">Ohne Eigenkapital.¹<br>Ohne Makler.<br>Einnahmen ab Tag 1.</p>
+<div class="rate"><b>2,6 %</b><span>Verkäuferdarlehen<br>bis 300.000 €</span></div>
+
+<section class="step" aria-labelledby="s1"><h2 id="s1"><i>1</i>Was möchten Sie?</h2>
+<div class="grid" id="wants">
+<button type="button" class="opt" aria-pressed="false" data-v="den Bebauungsplan und die Grundstücksunterlagen"><span class="ic">📄</span><b>Bebauungsplan &amp; Unterlagen</b><small>B-Plan Nr. 16, Lageplan</small></button>
+<button type="button" class="opt" aria-pressed="false" data-v="einen Besichtigungstermin vor Ort"><span class="ic">📍</span><b>Besichtigung vor Ort</b><small>Fuchshub 18, Reischach</small></button>
+<button type="button" class="opt" aria-pressed="false" data-v="eine Video-Besichtigung (live per Video)"><span class="ic">🎥</span><b>Video-Besichtigung</b><small>Live per Videoanruf</small></button>
+<button type="button" class="opt" aria-pressed="false" data-v="Informationen zum Verkäuferdarlehen zu 2,6 %"><span class="ic">💶</span><b>Verkäuferdarlehen 2,6 %</b><small>Finanzierung besprechen</small></button>
+<button type="button" class="opt" aria-pressed="false" data-v="das Exposé mit allen Zahlen"><span class="ic">📘</span><b>Exposé</b><small>Alle Zahlen kompakt</small></button>
+<button type="button" class="opt" aria-pressed="false" data-v="einen Rückruf"><span class="ic">📞</span><b>Rückruf</b><small>Wir rufen Sie an</small></button>
+</div></section>
+
+<section class="step" aria-labelledby="s2"><h2 id="s2"><i>2</i>Wie sollen wir uns melden?</h2>
+<div class="grid" id="ways">
+<button type="button" class="opt" aria-pressed="true" data-w="wa"><span class="ic">💬</span><b>WhatsApp</b><small>Schnellste Antwort</small></button>
+<button type="button" class="opt" aria-pressed="false" data-w="mail"><span class="ic">✉️</span><b>E-Mail</b><small>Unterlagen als Anhang</small></button>
+<button type="button" class="opt" aria-pressed="false" data-w="tel"><span class="ic">📞</span><b>Telefon</b><small>Direkt anrufen</small></button>
+<button type="button" class="opt" aria-pressed="false" data-w="video"><span class="ic">🎥</span><b>Videoanruf</b><small>WhatsApp-Video, Termin nach Absprache</small></button>
+</div></section>
+
+<section class="step" aria-labelledby="s3"><h2 id="s3"><i>3</i>Ihre Angaben <span style="text-transform:none;letter-spacing:0;font-weight:600">(freiwillig)</span></h2>
+<div class="fields">
+<div class="two"><div><label for="n">Name</label><input id="n" autocomplete="name"></div><div><label for="f">Firma</label><input id="f" autocomplete="organization"></div></div>
+<div class="two"><div><label for="t">Telefon</label><input id="t" type="tel" autocomplete="tel"></div><div><label for="z">Wunschtermin</label><input id="z" placeholder="z. B. Freitag Vormittag"></div></div>
+<div><label for="m">Ihre Nachricht</label><textarea id="m" rows="2" placeholder="z. B. Hallengröße, Zeitplan, Fragen"></textarea></div>
+</div></section>
+
+<div class="preview" id="pv" aria-live="polite"></div>
+<a class="send wa" id="send" href="#" target="_blank" rel="noopener">Anfrage per WhatsApp senden ↗</a>
+<p class="hint" id="hint">Ihre Nachricht öffnet sich fertig formuliert in WhatsApp. Es wird nichts automatisch gesendet.</p>
+
 <div class="who"><img src="../stephanie.jpg" alt="Stephanie Zenker"><div><b>Stephanie Zenker</b><span>Direkt von der Eigentümerin, provisionsfrei.</span></div></div>
-<div class="addr">E-Mail: <a href="mailto:stephanie.e.zenker@gmail.com">stephanie.e.zenker@gmail.com</a><br>
-Alle Infos zum Grundstück: <a href="../">gewerbegrund.info</a> · <a href="../#impressum">Impressum</a> · <a href="../#datenschutz">Datenschutz</a><br>
+<div class="direct"><a href="tel:+4915152638184">☎ +49 1515 263 81 84</a><a href="mailto:stephanie.e.zenker@gmail.com">✉ stephanie.e.zenker@gmail.com</a></div>
+<div class="addr">Alle Infos zum Grundstück: <a href="../">gewerbegrund.info</a> · <a href="../#impressum">Impressum</a> · <a href="../#datenschutz">Datenschutz</a><br>
+Diese Seite speichert und überträgt keine Daten. Ihre Angaben gehen erst an uns, wenn Sie die Nachricht in Ihrem E-Mail-Programm oder in WhatsApp selbst absenden.<br>
 ¹ Das Verkäuferdarlehen kann die übliche Eigenkapitalquote ersetzen, wenn Ihre Bank es als Eigenkapital anerkennt.</div>
-</main></body></html>
+</main>
+<script>
+(function(){
+  var PHONE='4915152638184', MAIL='stephanie.e.zenker@gmail.com';
+  var wants=[].slice.call(document.querySelectorAll('#wants .opt'));
+  var ways=[].slice.call(document.querySelectorAll('#ways .opt'));
+  var send=document.getElementById('send'), pv=document.getElementById('pv'), hint=document.getElementById('hint');
+  var $=function(id){return document.getElementById(id).value.trim();};
+  try{var q=new URLSearchParams(location.search).get('thema');if(q){wants.forEach(function(b){if(b.dataset.v.toLowerCase().indexOf(q.toLowerCase())>=0)b.setAttribute('aria-pressed','true');});}}catch(e){}
+  wants.forEach(function(b){b.addEventListener('click',function(){b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')==='true'?'false':'true');upd();});});
+  ways.forEach(function(b){b.addEventListener('click',function(){ways.forEach(function(x){x.setAttribute('aria-pressed','false');});b.setAttribute('aria-pressed','true');upd();});});
+  ['n','f','t','z','m'].forEach(function(id){document.getElementById(id).addEventListener('input',upd);});
+  function list(a){return a.length<2?a.join(''):a.slice(0,-1).join(', ')+' und '+a[a.length-1];}
+  function upd(){
+    var sel=wants.filter(function(b){return b.getAttribute('aria-pressed')==='true';}).map(function(b){return b.querySelector('b').textContent;});
+    var way=ways.filter(function(b){return b.getAttribute('aria-pressed')==='true';})[0].dataset.w;
+    var txt='Guten Tag Frau Zenker,\n\nich interessiere mich für das Gewerbegrundstück in Reischach (Fuchshub 18).';
+    if(sel.length) txt+='\n\nMein Anliegen:\n'+sel.map(function(s){return '• '+s;}).join('\n');
+    if(way==='video') txt+='\n\nIch wünsche mir einen Videoanruf per WhatsApp.';
+    if(way==='tel') txt+='\n\nBitte rufen Sie mich zurück.';
+    if($('z')) txt+='\nWunschtermin: '+$('z');
+    if($('m')) txt+='\n\n'+$('m');
+    var sig=[$('n'),$('f'),$('t')?'Tel. '+$('t'):''].filter(Boolean);
+    if(sig.length) txt+='\n\nViele Grüße\n'+sig.join('\n');
+    pv.textContent=txt;
+    send.removeAttribute('aria-disabled');
+    if(way==='mail'){
+      var subj='Anfrage Gewerbegrundstück Reischach'+(sel.length?': '+sel.join(', '):'');
+      send.href='mailto:'+MAIL+'?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(txt);
+      send.removeAttribute('target');send.className='send';send.textContent='Anfrage per E-Mail senden ✉';
+      hint.textContent='Ihre Nachricht öffnet sich fertig formuliert in Ihrem E-Mail-Programm.';
+    }else if(way==='tel'){
+      send.href='tel:+'+PHONE;send.removeAttribute('target');send.className='send';send.textContent='Jetzt anrufen: +49 1515 263 81 84';
+      hint.textContent='Lieber zurückgerufen werden? Wählen Sie „WhatsApp“ oder „E-Mail“ und tragen Sie Ihre Nummer ein.';
+    }else{
+      send.href='https://wa.me/'+PHONE+'?text='+encodeURIComponent(txt);send.target='_blank';send.className='send wa';
+      send.textContent=(way==='video'?'Videoanruf per WhatsApp anfragen ↗':'Anfrage per WhatsApp senden ↗');
+      hint.textContent='Ihre Nachricht öffnet sich fertig formuliert in WhatsApp. Es wird nichts automatisch gesendet.';
+    }
+  }
+  upd();
+})();
+</script>
+</body></html>

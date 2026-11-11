@@ -43,6 +43,12 @@ h1{font-size:28px;line-height:1.15;letter-spacing:-.02em;margin:0 0 8px}
 .consent input{flex:0 0 18px;width:18px;height:18px;margin:2px 0 0;accent-color:var(--ink)}
 .consent a{color:var(--ink)}
 .send[aria-disabled="true"]{opacity:.4;pointer-events:none}
+.ds{margin:-6px 0 16px 28px;font-size:14px}
+.ds summary{cursor:pointer;color:var(--muted);font-size:13px}
+.ds-body{background:#fff;border:1px solid var(--line);border-radius:4px;padding:12px 16px;margin-top:8px;max-height:360px;overflow:auto;font-size:13px;line-height:1.5}
+.ds-body h3{font-size:14px;margin:12px 0 4px}
+.ds-body a{color:var(--ink)}
+.ds-close{font:inherit;font-weight:600;background:var(--ink);color:#fff;border:0;border-radius:4px;padding:10px 14px;cursor:pointer;margin-top:8px}
 .opt small{color:var(--muted);font-size:14px;margin-left:auto;text-align:right}
 .opt:focus-visible{outline:2px solid var(--green);outline-offset:2px}
 .fields{display:grid;gap:12px}
@@ -99,7 +105,25 @@ h1{font-size:28px;line-height:1.15;letter-spacing:-.02em;margin:0 0 8px}
 
 <p class="pvl">Vorschau Ihrer Nachricht</p>
 <div class="preview" id="pv" aria-live="polite"></div>
-<label class="consent"><input type="checkbox" id="ok"><span>Ich habe die <a href="../#datenschutz" target="_blank">Datenschutzhinweise</a> gelesen und bin einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage verwendet werden.</span></label>
+<label class="consent"><input type="checkbox" id="ok"><span>Ich habe die <a href="#ds" id="dsl">Datenschutzhinweise</a> gelesen und bin einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage verwendet werden.</span></label>
+<details class="ds" id="ds"><summary>Datenschutzhinweise anzeigen</summary><div class="ds-body">
+    
+    <h3>1. Verantwortliche Stelle</h3>
+    <p>ZEN eGbR, Fuchshub 18, 84571 Reischach, vertreten durch Stephanie Zenker.<br>Telefon: <a href="tel:+4915152638184">+49 15 15  263 81 84</a><br>E-Mail: <a href="mailto:stephanie.e.zenker@gmail.com">stephanie.e.zenker@gmail.com</a>. Ein Datenschutzbeauftragter ist nicht bestellt, da die gesetzlichen Voraussetzungen nicht vorliegen.</p>
+    <h3>2. Technischer Betrieb, Cookies und Tracking</h3>
+    <p>Diese Seite verwendet keine Cookies und kein Besuchertracking. Schriftarten werden über die lokalen Systeme des Besuchers bereitgestellt. Bilder und Videos werden unter derselben Domain ausgeliefert. Für die Anzeige des Angebots werden keine Inhalte von WhatsApp eingebettet.</p>
+    <h3>3. Hosting und Server-Logs</h3>
+    <p>gewerbegrund.info wird über GitHub Pages (GitHub B.V., Prins Bernhardplein 200, 1097 JB Amsterdam, Niederlande) gehostet. Beim Besuch können technisch notwendige Zugriffsdaten wie IP-Adresse, Zeitpunkt, aufgerufene Seite und Browserinformationen verarbeitet werden. Grundlage ist Art. 6 Abs. 1 lit. f DSGVO (sichere Bereitstellung). Eine Verarbeitung durch GitHub-Unternehmen in den USA ist möglich. Die Domainverwaltung erfolgt über IONOS SE, Elgendorfer Str. 57, 56410 Montabaur. Informationen zum Datenschutz von GitHub: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub-Datenschutzhinweise</a>.</p>
+    <h3>4. Kontaktaufnahme</h3>
+    <p>Wenn Sie uns per E-Mail, Telefon oder WhatsApp kontaktieren, verarbeiten wir Ihre freiwillig übermittelten Angaben zur Beantwortung Ihrer Anfrage, zur Besichtigungsvereinbarung und gegebenenfalls zur Vorbereitung eines Kaufvertrages. Grundlage sind Art. 6 Abs. 1 lit. b und, soweit einschlägig, lit. f DSGVO. Eine Weitergabe erfolgt nur, soweit für die angefragte Abwicklung erforderlich und rechtlich zulässig. Daten werden gelöscht, wenn sie nicht mehr benötigt werden, vorbehaltlich gesetzlicher Aufbewahrungspflichten.</p>
+    <h3>5. Anfrage-Seite, WhatsApp und Google Maps</h3>
+    <p>Auf der Anfrage-Seite (gewerbegrund.info/anfrage) stellen Sie Ihre Nachricht selbst zusammen. Die Seite speichert und überträgt dabei keine Daten; Ihre Eingaben bleiben in Ihrem Browser. Erst wenn Sie auf „Senden“ klicken, öffnet sich Ihr E-Mail-Programm, WhatsApp oder Ihr Telefon, und Sie schicken die Nachricht selbst ab. Wählen Sie WhatsApp, verlassen Sie diese Seite. Erst durch Ihren Klick verlassen Sie diese Seite in Richtung WhatsApp. Dabei können Daten an WhatsApp Ireland Limited, Merrion Road, Dublin 4, Irland, und gegebenenfalls verbundene Unternehmen übertragen werden. Sie können stattdessen jederzeit anrufen oder eine E-Mail senden. Der Button „Lage in Google Maps“ ist ebenfalls nur ein Link; Google-Inhalte werden erst nach Ihrem Klick geladen (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland). <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">WhatsApp-Datenschutzinformationen</a>.</p>
+    <h3>6. Rechte betroffener Personen</h3>
+    <p>Sie haben im gesetzlichen Rahmen Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit sowie Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen. Sie können sich unter den oben angegebenen Kontaktdaten an uns wenden. Außerdem besteht ein Beschwerderecht bei einer Datenschutzaufsichtsbehörde, in Bayern etwa beim Bayerischen Landesamt für Datenschutzaufsicht, Promenade 18, 91522 Ansbach.</p>
+    <h3>7. Automatisierte Entscheidungen</h3>
+    <p>Eine automatisierte Entscheidung oder ein Profiling durch den Seitenbetreiber findet nicht statt.</p>
+    <p>Stand: November 2026. Diese Hinweise beschreiben die hier umgesetzte Seite und den bislang angegebenen Hostingbetrieb. Bei Änderungen an Hosting, eingesetzten Diensten oder Kontaktwegen müssen sie angepasst werden.</p>
+  <p><button type="button" class="ds-close" id="dsc">Schließen</button></p></div></details>
 <a class="send" id="send" aria-disabled="true" href="#" target="_blank" rel="noopener">Anfrage per WhatsApp senden</a>
 <p class="hint" id="hint">Ihre Nachricht öffnet sich fertig formuliert in WhatsApp. Es wird nichts automatisch gesendet.</p>
 
@@ -120,6 +144,8 @@ Verkäuferdarlehen: Sollzins 2,6 % p. a., fest für 10 Jahre, effektiver Jahresz
   ways.forEach(function(b){b.addEventListener('click',function(){ways.forEach(function(x){x.setAttribute('aria-pressed','false');});b.setAttribute('aria-pressed','true');upd();});});
   ['n','f','t','z','m'].forEach(function(id){document.getElementById(id).addEventListener('input',upd);});
   var ok=document.getElementById('ok');ok.addEventListener('change',upd);
+  var ds=document.getElementById('ds');document.getElementById('dsl').addEventListener('click',function(e){e.preventDefault();ds.open=true;ds.scrollIntoView({block:'nearest'});});
+  document.getElementById('dsc').addEventListener('click',function(){ds.open=false;ok.scrollIntoView({block:'center'});});
   function list(a){return a.length<2?a.join(''):a.slice(0,-1).join(', ')+' und '+a[a.length-1];}
   function upd(){
     var sel=wants.filter(function(b){return b.getAttribute('aria-pressed')==='true';}).map(function(b){return b.querySelector('b').textContent;});

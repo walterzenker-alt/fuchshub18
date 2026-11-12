@@ -161,7 +161,7 @@ Verkäuferdarlehen bis 300.000 €: Sollzins 2,6 % p. a., fest für 10 Jahre, ef
   var ok=document.getElementById('ok');ok.addEventListener('change',upd);
   var ds=document.getElementById('ds');document.getElementById('dsl').addEventListener('click',function(e){e.preventDefault();ds.open=true;ds.scrollIntoView({block:'nearest'});});
   document.getElementById('dsc').addEventListener('click',function(){ds.open=false;ok.scrollIntoView({block:'center'});});
-  var QUELLE='';try{var qq=(new URLSearchParams(location.search).get('quelle')||'').toLowerCase();QUELLE={schild:'Bauschild am Grundstück',expose:'Exposé',brief:'Brief',flyer:'Flyer',instagram:'Instagram',facebook:'Facebook',pinterest:'Pinterest',youtube:'YouTube',whatsapp:'WhatsApp'}[qq]||'';}catch(e){}
+  var QUELLE='';try{var qq=(new URLSearchParams(location.search).get('quelle')||'').toLowerCase();QUELLE={schild:'Bauschild am Grundstück',expose:'Exposé',brief:'Brief',flyer:'Flyer',instagram:'Instagram',facebook:'Facebook',pinterest:'Pinterest',youtube:'YouTube',whatsapp:'WhatsApp',ohnemakler:'ohne-makler.net'}[qq]||'';}catch(e){}
   function list(a){return a.length<2?a.join(''):a.slice(0,-1).join(', ')+' und '+a[a.length-1];}
   function upd(){
     var sel=wants.filter(function(b){return b.getAttribute('aria-pressed')==='true';}).map(function(b){return b.querySelector('b').textContent;});

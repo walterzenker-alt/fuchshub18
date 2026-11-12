@@ -142,7 +142,7 @@ h1{font-size:28px;line-height:1.15;letter-spacing:-.02em;margin:0 0 8px}
 <a class="send" id="send" aria-disabled="true" href="#" target="_blank" rel="noopener">Anfrage per WhatsApp senden</a>
 <p class="hint" id="hint">Ihre Nachricht öffnet sich fertig formuliert in WhatsApp. Es wird nichts automatisch gesendet.</p>
 
-<div class="who"><img src="../stephanie.jpg" alt="Stephanie Zenker"><div><b>Stephanie Zenker · ZEN eGbR</b><span><a href="tel:+4915152638184">+49 1515 263 81 84</a> · <a href="mailto:stephanie.e.zenker@gmail.com">stephanie.e.zenker@gmail.com</a></span></div></div>
+<div class="who"><img src="../stephanie.jpg" alt="Stephanie Zenker"><div><b>Stephanie Zenker · ZEN eGbR</b><span><a href="tel:+4915152638184">+49 1515 263 81 84</a> · <a href="mailto:stephanie.e.zenker@gmail.com">stephanie.e.zenker@gmail.com</a> · <a href="../kontakt-stephanie-zenker.vcf" download style="white-space:nowrap">Kontakt speichern</a></span></div></div>
 <div class="addr">Alle Informationen zum Grundstück: <a href="../">gewerbegrund.info</a> · <a href="../#impressum">Impressum</a> · <a href="../#datenschutz">Datenschutz</a><br>
 <b>Privatverkauf durch die Eigentümerin, kein Makler.</b> Beispiele, Rechnungen und Nutzungsideen dienen nur der unverbindlichen Ideenfindung und sind keine Rechts-, Steuer- oder Finanzierungsberatung; verbindlich ist nur der notarielle Kaufvertrag.<br>Diese Seite speichert und überträgt keine Daten. Ihre Angaben gehen erst an uns, wenn Sie die Nachricht in Ihrem E-Mail-Programm oder in WhatsApp selbst absenden.<br>
 Verkäuferdarlehen bis 300.000 €: Sollzins 2,6 % p. a., fest für 10 Jahre, effektiver Jahreszins 2,63 %. Beispiel: 300.000 €, 120 Monatsraten à 2.841,76 €, Gesamtbetrag 341.011,20 € (Zinsen 41.011,20 €). Darlehensgeberin: ZEN eGbR. Vergabe nach Bonitätsprüfung, kein Anspruch. Ob Ihre Bank es als Eigenkapital anerkennt, entscheidet die Bank.</div>
@@ -161,6 +161,7 @@ Verkäuferdarlehen bis 300.000 €: Sollzins 2,6 % p. a., fest für 10 Jahre, ef
   var ok=document.getElementById('ok');ok.addEventListener('change',upd);
   var ds=document.getElementById('ds');document.getElementById('dsl').addEventListener('click',function(e){e.preventDefault();ds.open=true;ds.scrollIntoView({block:'nearest'});});
   document.getElementById('dsc').addEventListener('click',function(){ds.open=false;ok.scrollIntoView({block:'center'});});
+  var QUELLE='';try{var qq=(new URLSearchParams(location.search).get('quelle')||'').toLowerCase();QUELLE={schild:'Bauschild am Grundstück',expose:'Exposé',brief:'Brief',flyer:'Flyer',instagram:'Instagram',facebook:'Facebook',pinterest:'Pinterest',youtube:'YouTube',whatsapp:'WhatsApp'}[qq]||'';}catch(e){}
   function list(a){return a.length<2?a.join(''):a.slice(0,-1).join(', ')+' und '+a[a.length-1];}
   function upd(){
     var sel=wants.filter(function(b){return b.getAttribute('aria-pressed')==='true';}).map(function(b){return b.querySelector('b').textContent;});
@@ -173,6 +174,7 @@ Verkäuferdarlehen bis 300.000 €: Sollzins 2,6 % p. a., fest für 10 Jahre, ef
     if($('m')) txt+='\n\n'+$('m');
     var sig=[$('n'),$('f'),$('e')?'E-Mail: '+$('e'):'',$('t')?'Tel. '+$('t'):''].filter(Boolean);
     if(sig.length) txt+='\n\nViele Grüße\n'+sig.join('\n');
+    if(QUELLE) txt+='\n\n(Aufmerksam geworden über: '+QUELLE+')';
     pv.textContent=txt;
     var mailok=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test($('e'));
     if(ok.checked&&mailok){send.removeAttribute('aria-disabled');}else{send.setAttribute('aria-disabled','true');}

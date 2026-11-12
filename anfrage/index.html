@@ -24,10 +24,13 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans
 main{max-width:640px;margin:0 auto;padding:32px 16px 48px}
 h1{font-size:28px;line-height:1.15;letter-spacing:-.02em;margin:0 0 8px}
 .lead{color:var(--muted);margin:0 0 20px}
-.facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:32px}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:32px}
 .facts div{padding:12px 10px 12px 0}
 .facts b{display:block;font-size:20px;letter-spacing:-.01em}
-.facts span{font-size:13px;color:var(--muted)}
+.facts span{display:block;font-size:13px;line-height:1.35;color:var(--muted);margin-top:2px}
+.facts div+div{padding-left:14px;border-left:1px solid var(--line)}
+.facts-note{font-size:12px;color:var(--muted);margin:-24px 0 32px}
+@media(max-width:560px){.facts{grid-template-columns:1fr 1fr}.facts div:nth-child(3){padding-left:0;border-left:0}.facts div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
 .step{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:20px;margin-bottom:16px}
 .step h2{font-size:17px;margin:0 0 4px}
 .step p.sub{font-size:14px;color:var(--muted);margin:0 0 14px}
@@ -79,13 +82,15 @@ h1{font-size:28px;line-height:1.15;letter-spacing:-.02em;margin:0 0 8px}
 <div class="topbar"><div class="container"><span class="topbar-place">Gewerbegrund an der B 588 · nahe A94 · Fuchshub 18 · 84571 Reischach</span><div class="topbar-contact"><a href="tel:+4915152638184" aria-label="Anrufen: +49 1515 263 81 84">☎&nbsp;+49&nbsp;1515&nbsp;263&nbsp;81&nbsp;84</a><a href="mailto:stephanie.e.zenker@gmail.com?subject=Anfrage%20Gewerbegrundst%C3%BCck%20Reischach" aria-label="E-Mail an stephanie.e.zenker@gmail.com">✉&nbsp;stephanie.e.zenker@gmail.com</a></div></div></div>
 <header class="anav"><a class="abrand" href="../" aria-label="Zur Startseite">GEWERBEGRUND<small>REISCHACH · NAHE A94</small></a><nav aria-label="Navigation"><a href="../#grundstueck">Das Grundstück</a><a href="../#expose">Exposé</a><a href="../#fragen">Fragen</a><a class="aback" href="../">Zur Startseite</a></nav></header>
 <main>
-<h1>Anfrage zum Gewerbegrundstück Fuchshub 18</h1>
+<h1>Anfrage zum Gewerbe&shy;grundstück Fuchshub&nbsp;18</h1>
 <p class="lead">Ca. 5.000 m² Gewerbegrund in Reischach mit zehn derzeit vermieteten Garagen. Verkauf direkt durch die Eigentümerin.</p>
 <div class="facts">
-<div><b>2,6 % / 2,63 %</b><span>Soll- / Effektivzins, Verkäuferdarlehen bis 300.000 €</span></div>
+<div><b>2,6&nbsp;%</b><span>Sollzins p.&nbsp;a.</span></div>
+<div><b>2,63&nbsp;%</b><span>effektiver Jahreszins</span></div>
 <div><b>0 €</b><span>Maklerprovision</span></div>
-<div><b>10</b><span>Garagen, derzeit vermietet</span></div>
+<div><b>10</b><span>Garagen vermietet</span></div>
 </div>
+<p class="facts-note">Verkäuferdarlehen bis 300.000 €, Zins fest für 10 Jahre. Rechenbeispiel unten.</p>
 
 <section class="step" aria-labelledby="s1"><h2 id="s1">1. Ihr Anliegen</h2><p class="sub">Mehrfachauswahl möglich.</p>
 <div class="list" id="wants">
@@ -140,7 +145,7 @@ h1{font-size:28px;line-height:1.15;letter-spacing:-.02em;margin:0 0 8px}
 <div class="who"><img src="../stephanie.jpg" alt="Stephanie Zenker"><div><b>Stephanie Zenker · ZEN eGbR</b><span><a href="tel:+4915152638184">+49 1515 263 81 84</a> · <a href="mailto:stephanie.e.zenker@gmail.com">stephanie.e.zenker@gmail.com</a></span></div></div>
 <div class="addr">Alle Informationen zum Grundstück: <a href="../">gewerbegrund.info</a> · <a href="../#impressum">Impressum</a> · <a href="../#datenschutz">Datenschutz</a><br>
 <b>Privatverkauf durch die Eigentümerin, kein Makler.</b> Beispiele, Rechnungen und Nutzungsideen dienen nur der unverbindlichen Ideenfindung und sind keine Rechts-, Steuer- oder Finanzierungsberatung; verbindlich ist nur der notarielle Kaufvertrag.<br>Diese Seite speichert und überträgt keine Daten. Ihre Angaben gehen erst an uns, wenn Sie die Nachricht in Ihrem E-Mail-Programm oder in WhatsApp selbst absenden.<br>
-Verkäuferdarlehen bis 300.000 €: Sollzins 2,6 % p. a., fest für 10 Jahre, effektiver Jahreszins 2,63 %, nach Bonitätsprüfung, kein Anspruch. Ob Ihre Bank es als Eigenkapital anerkennt, entscheidet die Bank.</div>
+Verkäuferdarlehen bis 300.000 €: Sollzins 2,6 % p. a., fest für 10 Jahre, effektiver Jahreszins 2,63 %. Beispiel: 300.000 €, 120 Monatsraten à 2.841,76 €, Gesamtbetrag 341.011,20 € (Zinsen 41.011,20 €). Darlehensgeberin: ZEN eGbR. Vergabe nach Bonitätsprüfung, kein Anspruch. Ob Ihre Bank es als Eigenkapital anerkennt, entscheidet die Bank.</div>
 </main>
 <script>
 (function(){

@@ -370,6 +370,18 @@
 .var-loan .vd-ch{--vd:var(--lime)}
 .var-note{font-size:12px;color:var(--muted);line-height:1.55;margin:20px 0 0;max-width:90ch}
 @media(max-width:820px){.var-grid{grid-template-columns:1fr}.var-card .btn{align-self:stretch}}
+
+/* Darlehensbox: drei gleich gesetzte Spalten */
+.lbx{display:grid;grid-template-columns:1.3fr 1fr 1fr;background:var(--ink);color:#fff;border-radius:12px;padding:20px 0;margin-bottom:26px;max-width:520px}
+.lbx-c{display:flex;flex-direction:column;padding:0 22px;min-width:0}
+.lbx-c+.lbx-c{border-left:1px solid #3e5146}
+.lbx-k{font-size:10.5px;line-height:1.35;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:#d1e4d5;white-space:nowrap}
+.lbx-v{font-size:30px;line-height:1;font-weight:850;letter-spacing:-.04em;margin-top:10px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.lbx-hl{color:var(--lime)}
+.lbx-s{font-size:11px;line-height:1.3;color:#9fb5a6;margin-top:8px;white-space:nowrap}
+.lbx .vd-ch{--vd:var(--lime)}
+@media(max-width:1180px){.lbx{grid-template-columns:1fr 1fr;padding:18px 0;max-width:none}.lbx-c:first-child{grid-column:1/-1;padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid #3e5146}.lbx-c:nth-child(2){border-left:0}.lbx-c{padding:0 18px}.lbx-v{font-size:28px}}
+@media(max-width:360px){.lbx-c{padding:0 14px}.lbx-v{font-size:24px}.lbx-k{font-size:9.5px}}
 </style>
   <script type="application/ld+json">
 {
@@ -465,14 +477,13 @@
         <div class="eyebrow"><i></i> Gewerbegrundstück in Reischach · nahe A94</div>
         <h1>Ihr Gewerbestandort.<br><em class="h1-list">Ohne Eigenkapital.<sup>¹</sup><br>Ohne Makler.<br>Zehn Garagen vermietet.</em></h1>
         <p class="hero-sub">5.000 m² erschlossenes <strong>Gewerbegrundstück in Reischach</strong> kaufen – inklusive zehn vermieteter Garagen. Direkt von der Eigentümerin, provisionsfrei und mit einem attraktiven Verkäuferdarlehen.</p>
-        <div class="loan" aria-label="Bis zu 300.000 Euro Verkäuferdarlehen, Sollzins 2,6 Prozent, effektiver Jahreszins 2,63 Prozent">
-          <div><div class="loan-num"><span class="type-reveal">300.000 €</span></div><div class="loan-label"><span class="type-reveal type-loan-word">Verkäuferdarlehen</span> · bis zu</div></div>
-          <div class="loan-sep"></div>
-          <div class="rate"><span class="type-reveal">2,6 %</span><small>Sollzins p. a.</small></div>
-          <div class="rate"><span class="type-reveal">2,63 %</span><small>effektiver Jahreszins</small></div>
+        <div class="lbx" aria-label="Verkäuferdarlehen bis 300.000 Euro, Sollzins 2,6 Prozent pro Jahr, effektiver Jahreszins 2,63 Prozent">
+          <div class="lbx-c"><span class="lbx-k">Verkäuferdarlehen<br>bis zu</span><span class="lbx-v">300.000&nbsp;€</span><span class="lbx-s">vom Kaufpreis</span></div>
+          <div class="lbx-c"><span class="lbx-k">Sollzins<br>pro Jahr</span><span class="lbx-v lbx-hl">2,6&nbsp;%</span><span class="lbx-s">fest für 10 Jahre</span></div>
+          <div class="lbx-c"><span class="lbx-k">Effektiver<br>Jahreszins</span><span class="lbx-v lbx-hl">2,63&nbsp;%</span><span class="lbx-s">120 Monatsraten</span></div>
         </div>
         <div class="hero-actions"><a href="anfrage/?thema=verk%C3%A4uferdarlehen" class="btn btn-dark">Finanzierung anfragen</a><a href="#grundstueck" class="btn btn-outline">Grundstück ansehen</a></div>
-        <p class="hero-note">Kaufpreis des Grundstücks: <b>1.250.000 €</b> · Verkäuferdarlehen ist Teil der Finanzierung, kein Preisnachlass. Konditionen nach Vereinbarung.<br><sup>¹</sup> Das Verkäuferdarlehen (bis zu 300.000 €) kann die übliche Eigenkapitalquote ersetzen, wenn Ihre Bank es als Eigenkapital anerkennt. Alle zehn Garagen sind derzeit vermietet. Die Mieteinnahmen stehen dem Käufer ab dem im Kaufvertrag vereinbarten Übergang von Nutzen und Lasten zu.</p>
+        <p class="hero-note">Kaufpreis des Grundstücks: <b>1.250.000 €</b> · Verkäuferdarlehen ist Teil der Finanzierung, kein Preisnachlass. Konditionen siehe Beispiel im Abschnitt Finanzierung.<br><sup>¹</sup> Das Verkäuferdarlehen (bis zu 300.000 €) kann die übliche Eigenkapitalquote ersetzen, wenn Ihre Bank es als Eigenkapital anerkennt. Alle zehn Garagen sind derzeit vermietet. Die Mieteinnahmen stehen dem Käufer ab dem im Kaufvertrag vereinbarten Übergang von Nutzen und Lasten zu.</p>
       </div>
       <div class="hero-art hero-reel"><video class="hero-video" autoplay muted loop playsinline controls preload="metadata" poster="reel-verkaeuferdarlehen-garagen.jpg" aria-label="Kurzvideo: Verkäuferdarlehen und vermietete Garagen"><source src="reel-verkaeuferdarlehen-garagen.mp4" type="video/mp4"></video></div>
       </section></div>
@@ -486,7 +497,7 @@
       <div>
         <div class="label">Das macht den Unterschied</div>
         <h2 class="section-title">Weniger Bankkredit. Mehr finanzieller Spielraum.</h2>
-        <p class="lead">Die Eigentümerin finanziert einen Teil Ihres Kaufs selbst: <b>bis zu 300.000 € Verkäuferdarlehen, Sollzins 2,6 % p. a., effektiver Jahreszins 2,63 %</b> So lässt sich die Finanzierung auf mehrere Bausteine verteilen – mit handfesten Chancen für Ihren Start am eigenen Gewerbestandort.</p>
+        <p class="lead">Die Eigentümerin finanziert einen Teil Ihres Kaufs selbst: <b>bis zu 300.000 € Verkäuferdarlehen, Sollzins 2,6 % p. a., effektiver Jahreszins 2,63 %.</b> So lässt sich die Finanzierung auf mehrere Bausteine verteilen – mit handfesten Chancen für Ihren Start am eigenen Gewerbestandort.</p>
         <div class="finance-benefit-lead" aria-label="Vorteile auf einen Blick"><strong>Bis zu 300.000 €</strong><span>des Kaufpreises übernimmt die Verkäuferin als Darlehen – <b>Sollzins 2,6 % p. a., effektiver Jahreszins 2,63 %</b>.</span></div>
         <div class="finance-points">
           <div class="finance-point"><span class="tick">✓</span><span><b>Weniger Bankkredit erforderlich.</b> Der Verkäuferanteil muss nicht zusätzlich über die Bank finanziert werden. Das kann die Bankzinsen in Euro verringern.</span></div>

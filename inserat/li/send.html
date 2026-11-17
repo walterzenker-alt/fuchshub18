@@ -1,4 +1,4 @@
 <!doctype html><meta charset="utf-8"><title>Datei</title><script>
 const f=new URLSearchParams(location.search).get('f')||'inserat/li/titelbild-linkedin.jpg';
-if(/^[a-z0-9\/._-]+$/i.test(f)&&!f.includes('..'))fetch('/'+f,{cache:'no-store'}).then(r=>r.blob()).then(b=>{if(window.opener){window.opener.postMessage({gwImg:b,gwName:f.split('/').pop()},'https://www.linkedin.com');document.body.textContent='gesendet';setTimeout(()=>window.close(),800);}});
+if(/^[a-z0-9\/._-]+$/i.test(f)&&!f.includes('..'))fetch('/'+f,{cache:'no-store'}).then(r=>r.blob()).then(b=>{if(window.opener){window.opener.postMessage({gwImg:b,gwName:f.split('/').pop()},(['https://www.linkedin.com','https://business.facebook.com','https://www.instagram.com'].includes(new URLSearchParams(location.search).get('o'))?new URLSearchParams(location.search).get('o'):'https://www.linkedin.com'));document.body.textContent='gesendet';setTimeout(()=>window.close(),800);}});
 </script>

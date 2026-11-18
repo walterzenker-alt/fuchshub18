@@ -6,8 +6,8 @@
     <image:image><image:loc>https://gewerbegrund.info/gewerbegrund-vorschau.jpg</image:loc></image:image>
     <video:video>
       <video:thumbnail_loc>https://gewerbegrund.info/reel-verkaeuferdarlehen-garagen.jpg</video:thumbnail_loc>
-      <video:title>Gewerbegrundstück Reischach: ohne Eigenkapital, ohne Makler, Einnahmen ab Tag 1</video:title>
-      <video:description>5.097 m² Gewerbegrund an der B 588 nahe A94: Verkäuferdarlehen bis 300.000 € zu 2,6 %, 10 vermietete Garagen, direkt von der Eigentümerin.</video:description>
+      <video:title>Gewerbegrundstück Reischach: Verkäuferdarlehen 2,6 % (effektiv 2,63 %), ohne Makler, Garagen vermietet</video:title>
+      <video:description>5.097 m² Gewerbegrund an der B 588 nahe A94: Verkäuferdarlehen bis 300.000 €, Sollzins 2,6 %, effektiv 2,63 %, 10 vermietete Garagen, direkt von der Eigentümerin.</video:description>
       <video:content_loc>https://gewerbegrund.info/reel-verkaeuferdarlehen-garagen.mp4</video:content_loc>
       <video:duration>26</video:duration>
     </video:video>
@@ -15,5 +15,21 @@
   <url>
     <loc>https://gewerbegrund.info/anfrage/</loc>
     <lastmod>2026-11-11</lastmod>
+  </url>
+  <url>
+    <loc>https://gewerbegrund.info/handwerksbetrieb-grundstueck-altoetting/</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://gewerbegrund.info/lagerflaeche-logistik-a94/</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://gewerbegrund.info/gewerbegrundstueck-mit-betriebswohnung/</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://gewerbegrund.info/gewerbegrundstueck-verkaeuferdarlehen/</loc>
+    <lastmod>2026-11-18</lastmod>
   </url>
 </urlset>

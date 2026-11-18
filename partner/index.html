@@ -143,12 +143,15 @@ h1{font-size:28px;line-height:1.15;letter-spacing:-.02em;margin:0 0 8px}
 </main>
 <script>
 // Freigegebene Partner hier eintragen: {name, fach, url}
-var PARTNERS=[];
+var PARTNERS=[
+  {name:'Spedition Schwanthaler GmbH', fach:'Spedition und Logistik', url:''},
+  {name:'Stadthotel Mühldorf · Thomas Hollinger', fach:'Hotel und Übernachtung', url:''}
+];
 (function(){
   var PHONE='4915152638184', MAIL='stephanie.e.zenker@gmail.com';
   var pl=document.getElementById('plist');
   if(!PARTNERS.length){pl.innerHTML='<p class="pempty">Die ersten Partner werden derzeit freigeschaltet.</p>';}
-  PARTNERS.forEach(function(p){var a=document.createElement('a');a.className='prow';a.href=p.url;a.target='_blank';a.rel='noopener';
+  PARTNERS.forEach(function(p){var a=document.createElement(p.url?'a':'div');a.className='prow';if(p.url){a.href=p.url;a.target='_blank';a.rel='noopener';}
     var b=document.createElement('b');b.textContent=p.name;var s=document.createElement('span');s.textContent=p.fach;a.appendChild(b);a.appendChild(s);pl.appendChild(a);});
   var ways=[].slice.call(document.querySelectorAll('#ways .opt'));
   var send=document.getElementById('send'),pv=document.getElementById('pv'),hint=document.getElementById('hint'),ok=document.getElementById('ok');
